@@ -94,10 +94,27 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 # Confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 
-# Calculate False Positive Rate, this indicates how many fake banknotes pass as real. Lower = better obv. 
+# Calculate False Positive Rate, this indicates how many fake banknotes pass as real. Lower = better."
 FP = cm[1, 0]
 TN = cm[1, 1]
 FPR = FP / (FP + TN)
 
 # Output the result
 print(f"False Positive Rate (FPR): {FPR:.2f}")
+
+
+""" My results, 
+
+Accuracy: 0.9927272727272727
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       148
+           1       1.00      0.98      0.99       127
+
+    accuracy                           0.99       275
+   macro avg       0.99      0.99      0.99       275
+weighted avg       0.99      0.99      0.99       275
+
+And most importantly FPR: False Positive Rate (FPR): 0.02
+"""
