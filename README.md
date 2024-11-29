@@ -1,4 +1,5 @@
-Data isn't mine it belongs to: 
+The code is fully mine however
+Data is not mine it belongs to & thank you: 
 
 DOI
 10.24432/C55P57
